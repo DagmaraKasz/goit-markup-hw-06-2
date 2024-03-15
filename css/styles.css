@@ -1,0 +1,1182 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --iris-color: #4D5AE5;
+    --ocean-color: #404BBF;
+    --navyblue-color:#2E2F42;
+    --green-color: #31D0AA;
+    --slate-color: #434455;
+    --light-slate-color: #8E8F99;
+    --cornflower-color: #E7E9FC;
+    --cloud-color: #F4F4FD;
+    --navyblue-modal-color: #2E2F42;
+    --grey-color: #2E2F42;
+    --white-color: #FFFFFF;
+    --dairy-color: #FCFCFC;   
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate-color);
+    line-height: 1.6;
+    background-color: var(--white-color);
+}
+
+header {
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* klasa menu dla index.html */
+.menu {
+    color: var(--navyblue-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: inline-block;
+}
+
+.menu:hover,
+.menu:focus {
+    color: var(--ocean-color);
+}
+
+.menu:active {
+    color: var(--ocean-color);
+}
+
+/* tu skonczylam sprawdzac */
+/* dodac address list slate na ocean */
+
+.contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    padding: 24px 0;
+}
+.contact:hover,
+.contact:focus {
+    color: var(--ocean-color);
+}
+.contact:active {
+    color: var(--ocean-color);
+}
+
+.contact {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+
+/* main section h1, przycisk Order Service na index.html przyciski w portfolio*/
+
+.list-buttons {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+
+/* main section, przycisk Order Service na index.html 
+/* class= "buttons" */
+.button-index {
+    font-family: inherit;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    cursor: pointer;
+    padding: 16px 32px 16px 32px;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .button-index {
+    display: block;
+    justify-content: center;
+    height: 56px;
+    margin-top: 48px;
+    margin: auto;
+} */
+
+
+
+.button-index:focus,
+.button-index:hover {
+    color: var(--white-color);
+    background-color: var(--ocean-color);
+    background-color:#404bbf;
+    cursor: pointer;
+    border: none;
+}
+
+/* tło dla tekstu effective solutions w HERO SECTION index.html */
+.header-main {
+    padding: 188px 0;
+    max-width: 1440px;
+    width: 100%;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+    /* background: linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), url(./images/people-office\ 1.jpg), var(--grey-color, #2e2f42); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.header-main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* nagłówek h1 */
+.title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    max-width: 496px;
+}
+/* przycisk order service dla index.html */
+
+/* logo w nawigacji */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--iris-color);
+    }
+
+    /* logo dwukolorowe WEBSTUDIO */
+.highlight {
+     color: var(--iris-color);
+}
+.studio-highlight {
+    color: var(--navyblue-color);
+}
+
+.list {
+    list-style: none;
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    display: inline-block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.address {
+    font-style: normal;
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+/* druga sekcja 'Solutions' */
+.list features {
+    list-style: none;
+}
+.highlight-element {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue-color);
+    margin-bottom: 8px;
+    text-align: center;
+}
+.akapit {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    text-align: left;
+}
+/* trzecia sekcja Our Team */
+.people {
+    background-color: var(--cloud-color);
+}
+.our-team {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+
+.people-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+
+.list-people {
+    color: var(--slate-color);
+    background-color: var(--white-color);
+}
+    
+/* Dodanie ikon SVG social media */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.socials-logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Dla linku w klasie ustawiony jest styl width: 100%,
+który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskiego. Dla linku w klasie ustawiony jest styl height: 100%, który ustawia wysokość elementu na 100% wysokości kontenera rodzicielskiego */
+.socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link:hover {
+    background-color: var(--ocean-color);
+}
+.socials-link:focus {
+    background-color: var(--ocean-color);
+}
+.socials-link:active {
+    background-color: var(--ocean-color);
+}
+.svg-one {
+    fill: #F4F4FD;
+}
+/* Dla znacznika svg w klasie ustawiony jest styl fill: currentColor;służący do ustawienia wartości koloru odpowiadającej elementowi rodzicielskiemu (w tym celu należy usunąć właściwość fill w sprite dla ikony) */
+.svg-two {
+    fill: currentColor;
+}
+
+/* Sekcja 5 Klienci */
+/* .section-clients {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin: 120px 0;
+    align-items: center;
+} */
+
+/* nagłówek h2 Customers */
+/* .clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue-color);
+    margin-bottom: 72px;
+} */
+/* lista klientów clients */
+/* .clients {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 24px;
+} */
+
+/* W pierwszym punkcie listy znajduje się link */
+/* .clients-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-slate-color);
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--ocean-color);
+    color: var(--ocean-color);
+}
+.clients-link:active {
+    color: var(--ocean-color);
+    border-color: var(--ocean-color);
+}
+
+/* sekcja main dla portfolio.html */
+.buttons {
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+ }
+
+.buttons:focus,
+.buttons:hover {
+    color: var(--white-color);
+    background-color: var(--ocean-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    }
+
+/* nie moze byc pusty naglowek dla portfolio.html*/
+/* .visually-hidden {
+    color: var(--white-color);
+} */
+
+.list {
+    list-style: none;
+}
+
+.header-list {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+}
+
+.link{
+    text-decoration: none;
+}
+
+/* nagłówek - dodwanie kontenerów lekcja 3*/
+
+/* nawigacja dla Index i Portfolio*/
+/* Dla headera przypisane są klasy */
+.header-main-class {
+    display: flex;
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+/* Wewnątrz headera znajduje się div - kontener zawierający wszystkie pozostałe elementy headera */
+.nav-all-container {
+    display: flex;
+    align-items: center;
+}
+/* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Wewnątrz headera znajduje się nav */
+/* Dla nav styl display: flex;służący do ułożenia logo i menu w jednym wierszu; styl align-items: center;
+służący do pionowego wyrównania nawigacji i kontaktów */
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--white-color);
+    /* padding: 20px; */
+    border-color: var(--cornflower-color);
+}
+/* Wewnątrz nawigacji znajduje się logo */
+.logo {
+    margin-right: 76px;
+}
+/* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
+.menu-nav-box {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+/* W pierwszym elemencie menu w linku w klasie zdefiniowany jest styl position: relative;
+dla ustalenia pozycjonowania elementu względem jego normalnej pozycji w przepływie dokumentu */
+.link-active {
+    position: relative;
+    color: var(--ocean-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Wewnątrz znacznika address znajduje się lista,
+dla której przypisane są klasy */
+.menu-address-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 0;
+    margin-left:auto;
+}
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-layout {
+    margin-right: 76px;
+    padding: 24px 0;
+    display: inline-block;
+}
+
+/* sekcja pierwsza description Solutions */
+/* .descriptions {
+    padding-top: 188px;
+    padding-bottom: 188px;
+} */
+.title {
+    display:block;
+    max-width: 496px;
+    margin: auto;
+    margin-bottom: 48px;
+}
+
+
+/* druga sekcja Solutions */
+.features-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features-list {
+    display: flex;
+    gap: 24px;
+    /* flex-wrap: wrap; */
+    /* margin-right: 24px; */
+    /* width: calc((100% - 72px)/4); */
+}
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
+.features-elements {
+    flex-basis: 100%;
+    flex-basis: calc((100% - 72px) / 2);
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 112px; */
+    background-color: #F4F4FD;
+    background-size: 264px;
+    padding: 24px 100px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+
+
+/* nagłówek h3 np.Strategy */
+.highlight-element {
+    /* width: 264px;
+    height: 24px; */
+    margin-bottom:8px;
+    text-align: left;
+    /* line-height: 24px;
+    font-size: 20px; */
+}
+.akapit {
+    font-size: 16px;
+}
+
+/* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.features-elements {
+    display: flex;
+    flex-direction: column;
+}
+.logo-footer-box {
+    margin-bottom: 16px;
+}
+
+/* czwarta sekcja 'Our portfolio'*/
+.subtitle {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--navyblue-color);
+}
+/* trzecia sekcja images What are we doing */
+.scope-section {
+    display: block;
+    padding-bottom: 120px 0;
+    /* margin-bottom: 10px; */
+}
+/* nagłówek h2 What are we doing */
+.subtitle {
+    font-weight: 700;
+    /* font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue-color); */
+    margin-bottom: 72px;
+    padding-top: 120px;
+}
+/* Dla listy w klasie ustawiony jest styl display: flex;
+służący do ułożenia elementów listy poziomo w rzędzie */
+.image-container-all {
+    display: flex;
+    gap: 24px;
+    /* padding-bottom: 120px;
+    margin-bottom: 120px; */
+}
+/* Dla pierwszego punktu listy przypisane są klasy o długości co najmniej 3 znaków,składające się z małych liter alfabetu łacińskiego i mogące zawierać myślnik lub podkreślnik */
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);
+służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można użyć width: calc((100% - 3 * 16px) / 3) lub flex-basis: calc((100% - 48px) / 3), lub flex-basis: calc((100% - 3 * 16px) / 3)) */
+.image-container {
+    width: calc((100% - 48px)/3);
+}
+
+/* czwarta sekcja our team */
+.people {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    margin-top: 120px;
+}
+/* .container-our-team {
+    display: inline; */
+    /* display: block; */
+    /* display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 4px 4px;
+    width: 1440px;
+    height: 732px;
+} */
+/* nagłówek h2 our team */
+.our-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navyblue-color);
+    margin-bottom: 72px;
+    /* justify-content: center; */
+}
+/* cały box dla zdj nagłówka h3 i paragrafu */
+.people-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+/* Dla pierwszego punktu listy */
+.list-people {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 4px 4px;
+    flex-basis: 100%;
+    max-width: 264px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* W pierwszym punkcie listy znajduje się div,który służy jako kontener dla imienia pracownika i nazwy jego stanowiska */
+.names-positions-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+/* nagłówek h3 imie i nazwisko */
+.people-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navyblue-color);
+    margin-bottom: 8px;
+    text-align: center;
+}
+/* W kontenerze drugim elementem jest akapit p */
+.position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
+    text-align: center;
+}
+/* Sekcja czwarta Portfolio */
+/* nagłówek h2 our portfolio klasa our-team */
+/* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 2px 1px rgba(46, 47, 66, 0.08); */
+
+/* Karta transition dla Portfolio*/
+.img-transition {
+    /* width: 360px; */
+    /* border: none; */
+    color: var(--cloud-color);
+    /* font-size: 32px;
+    position: relative;
+    overflow: hidden; */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+.img-transition:hover .overlay-text,
+.img-transition:focus .overlay-text {
+    transform: translateY(0%);
+}
+
+.img-transition:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.img-trans-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud-color);
+    padding: 40px 32px;
+    background-color: var(--iris-color);
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .list-link-buttons {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+.svg-four {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --------------------- FOOTER ---------------------*/
+.page-footer {
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 120px;
+}
+
+.p {
+    font-size: 16px;
+    color: #F4F4FD;
+}
+
+/* Dla div w klasie ustawiony jest styl align-items: baseline,
+który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej osi kontenera względem linii bazowej tekstu pierwszego wiersza każdego elementu */
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.footer-logo-akapit {
+    margin-right: 120px;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--iris-color);
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+/* .logo-footer-box {
+    display: inline-block;
+    margin-bottom: 16px;
+} */
+
+.footer-info {
+    line-height: 1.5;
+    color: var(--cloud-color);
+    letter-spacing: 0.02em;
+    display: block;
+    width: 264px;
+}
+
+.text-akapit-socials {
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--white-color);
+    margin-bottom: 16px;
+    /* text-align: center; */
+}
+.footer-socials {
+    display: flex;
+    gap: 16px;
+    justify-content: space-evenly;
+    margin-right: 80px;
+}
+.footer-list {
+    list-style: none;
+}
+
+.footer-socials-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--green-color);
+}
+.footer-socials-link:active {
+    background-color: var(--green-color);
+}
+
+/* strona Portfolio.html main */
+
+/* Wewnątrz znacznika main znajduje się sekcja utworzona za pomocą znacznika section */
+.buttons-main {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+/* Cała treść sekcji jest umieszczona w kontenerze utworzonym przy użyciu znacznika div. Dla tego div przypisana jest domyślna klasa container. Wewnątrz kontenera znajduje się lista */
+
+/* display flex służy do ułożenia elementów listy poziomo w jednym rzędzie; justify-content: center służy do wyśrodkowania elementów potomnych listy; styl gap: 24px służy do określenia odstępów między punktami listy; styl margin-bottom: 72px,
+który służy do określenia odstępu od listy */
+.list-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+/* W pierwszym punkcie listy znajduje się przycisk */
+.buttons {
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+}
+.buttons:focus,
+.buttons:hover {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+/* Jeszcze jedna lista wewnątrz kontenera - zdjęcia - styl flex-wrap: wrap;służący do przenoszenia elementów listy do nowego wiersza, jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
+.buttons-link {
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
+.list-link-buttons {
+    width: calc((100% - 48px)/3);
+    display: block;
+}
+
+/* Przy najechaniu na link, zastosowany do niego zostaje styl box-shadow o wartości 0px 1px 6px rgba(46, 47, 66, 0.08),0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);służący do określenia cienia dla elementu przy najechaniu myszą */
+.image-link {
+    display: block;
+}
+.image-link:focus,
+.image-link:active,
+.image-link:hover {
+    box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* Wewnątrz pierwszego punktu listy znajduje się link. W linku znajduje się kontener dla nazwy i kategorii aplikacji,
+który jest utworzony za pomocą znacznika div*/
+.name-cat-app-box {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+/* Dla nagłówka w klasie ustawiony jest styl margin-bottom: 8px,który służy do określenia odstępu między akapitem a nagłówkiem */
+.header-list {
+    margin-bottom: 8px;
+}
+
+/* Okno modalne Backdrop */
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background-color: var(--dairy-color);
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 72px 24px 24px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--cornflower-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover {
+    background-color: #404bbf;
+    border: none;
+    background-color: #404bbf;
+    fill: var(--white-color);
+    fill: #ffffff;
+}
+
+.close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: var(--white-color);
+    fill: #ffffff;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Koniec okna modalnego end backdrop */
+
+/* Formularz */
+/* .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    border: 1px solid #212121;
+    max-width: 300px;
+} */
+.form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navyblue-color);
+    margin-bottom: 16px;
+}
+.content-modal {
+    margin-bottom: 8px;
+}
+
+.label-modal {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--light-slate-color);
+    display: block;
+    margin-bottom: 4px;
+}
+/* ikonki podświetlały się razem z ramką */
+.input-field:hover+.modal-icon,
+.input-field:focus + .modal-icon {
+    fill: var(--iris-color);
+}
+
+.data-field {
+    position: relative;
+}
+.input-field {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-color: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+
+.textarea:focus,
+.textarea:hover {
+    border-color: #4D5AE5;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: 250ms cubic-bezier (0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon:focus-within {
+    fill: #4D5AE5;
+}
+
+.field-comment {
+    margin-bottom: 16px;
+}
+
+.field-text {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.field-text:focus {
+    border-color: #4D5AE5;
+}
+
+.checkbox-field {
+    margin-bottom: 24px;
+}
+
+.terms-conditions {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--light-slate-color);
+}
+
+.modal-check:checked+.terms-conditions .accept-icon {
+    background-color: var(--ocean-color);
+    border: none;
+    fill: #F4F4FD;
+}
+
+.accept-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color:#404bbf;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.privacy-policy {
+    color: #4d5ae5;
+    text-decoration: underline;
+}
+.form-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    margin: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Koniec formularza w oknie modalnym */
+
+/* .form-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+    color: var(--light-slate-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+
+
+/* Koniec Formularz */
+
+
+/* Footer Subscribe formularz */
+
+.subscribe-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscribe-label {
+    display: inline-flex;
+}
+
+.subscribe-input {
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: transparent;
+    color: var(--white-color);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    gap: 24px;
+}
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+}
+/* koniec Subscribe */
+

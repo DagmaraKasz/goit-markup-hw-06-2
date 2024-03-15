@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', 'Raleway', 'Verdana', sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.logo .link {
+    color: #434455
+}
+
+.logo .link:hover {
+    color: #404BBF;
+}
+
+a:hover,
+button:hover {
+    color: #FFFFFF;
+}
+
+a:hover,
+button:hover {
+    background-color: #404BBF;
+}
+
+.button-index {
+    button {
+        color: var(--white-color);
+        background-color: var(--iris-color);
+    }
+
+    a:hover,
+    button:hover {
+        background-color: var(--ocean-color);
+    }
+}
+
+a:hover,
+.button-index:hover {
+    background-color: var(--ocean-color);
+}
+
+
+
+
+
+body {
+    font-family: 'Roboto', 'Raleway', 'Verdana', sans-serif;
+    color: #434455;
+    line-height: 1.6;
+}
+
+
+.link {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
