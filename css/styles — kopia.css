@@ -68,7 +68,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
-    padding: 6px 0;
+    padding: 24px 0;
 }
 .contact:hover,
 .contact:focus {
@@ -417,8 +417,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 }
 /* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
 .container {
-    width: 100%;
-    max-width: 1158px;
+    width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -435,9 +434,9 @@ służący do pionowego wyrównania nawigacji i kontaktów */
     border-color: var(--cornflower-color);
 }
 /* Wewnątrz nawigacji znajduje się logo */
-/* .logo {
+.logo {
     margin-right: 76px;
-} */
+}
 /* Wewnątrz nawigacji znajduje się menu "menu-nav-box" */
 .menu-nav-box {
     display: flex;
@@ -493,35 +492,42 @@ dla której przypisane są klasy */
 .features-list {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;  
+    /* flex-wrap: wrap; */
+    /* margin-right: 24px; */
+    /* width: calc((100% - 72px)/4); */
 }
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
 .features-elements {
     flex-basis: 100%;
-    flex-basis: calc((100% - 72px));
+    flex-basis: calc((100% - 72px) / 2);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .icons-container {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 112px; */
+    background-color: #F4F4FD;
+    background-size: 264px;
+    padding: 24px 100px;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 
 
 /* nagłówek h3 np.Strategy */
 .highlight-element {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    align-content: center;
-    letter-spacing: 2%;
-    margin-bottom:8px;    
+    /* width: 264px;
+    height: 24px; */
+    margin-bottom:8px;
+    text-align: left;
+    /* line-height: 24px;
+    font-size: 20px; */
 }
 .akapit {
-    font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    align-content: center;
 }
 
 /* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
@@ -738,10 +744,9 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .footer-logo-akapit {
-    justify-content: center;
+    margin-right: 120px;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -751,12 +756,11 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     text-transform: uppercase;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-left: 12px;
 }
-.logo-footer-box {
-    display: flex;
-    justify-content: center;
-}
+/* .logo-footer-box {
+    display: inline-block;
+    margin-bottom: 16px;
+} */
 
 .footer-info {
     line-height: 1.5;
@@ -765,9 +769,7 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: block;
     width: 264px;
 }
-.footer-socials-container {
-    margin-left: 40px;
-}
+
 .text-akapit-socials {
     font-weight: 500;
     font-size: 16px;
@@ -775,9 +777,8 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     line-height: 24px;
     letter-spacing: 0.32px;
     color: var(--white-color);
-    margin-top: 40px;
     margin-bottom: 16px;
-    justify-content: center;
+    /* text-align: center; */
 }
 .footer-socials {
     display: flex;
@@ -837,14 +838,14 @@ który służy do określenia odstępu od listy */
 }
 /* Jeszcze jedna lista wewnątrz kontenera - zdjęcia - styl flex-wrap: wrap;służący do przenoszenia elementów listy do nowego wiersza, jeśli nie ma wystarczająco dużo miejsca w poprzednim*/
 .buttons-link {
-    display: block;
-    /* flex-wrap: wrap; */
+    display:flex;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
 }
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy w jednym wierszu) */
 .list-link-buttons {
-    flex-basis: calc((100% - 120px)/2);
+    width: calc((100% - 48px)/3);
     display: block;
 }
 
@@ -867,7 +868,6 @@ który jest utworzony za pomocą znacznika div*/
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    justify-content: center;
 }
 /* Dla nagłówka w klasie ustawiony jest styl margin-bottom: 8px,który służy do określenia odstępu między akapitem a nagłówkiem */
 .header-list {
@@ -1121,10 +1121,6 @@ który jest utworzony za pomocą znacznika div*/
 
 
 /* Footer Subscribe formularz */
-.subscribe-container {
-    display: flex;
-    flex-direction: column;
-}
 
 .subscribe-title {
     font-weight: 500;
@@ -1132,30 +1128,16 @@ który jest utworzony za pomocą znacznika div*/
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    margin-top: 40px;
     margin-bottom: 16px;
-    justify-content: center;
 }
 
 .subscribe-form {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .subscribe-label {
     display: inline-flex;
-    justify-content: center;
-}
-
-.subscribe-form .subscribe-label {
-    flex-basis: 100%;
-    width: 100%;
-}
-
-.subscribe-form .subscribe-label .subscribe-input {
-    width: 100%;
 }
 
 .subscribe-input {
@@ -1198,236 +1180,3 @@ który jest utworzony za pomocą znacznika div*/
 }
 /* koniec Subscribe */
 
-/* Responsywność */
-html, body {
-    width: 100%;
-}
-
-/* body {
-    overflow-x: hidden;
-} */
-
-.nav-all-container {
-    display: none;
-}
-
-.mobile-menu-layout {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.mobile-menu-layout button {
-    background-color: transparent;
-    border: none;
-}
-.js-menu-container {
-    display: none; 
-}
-
-.js-menu-container.is-open {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    flex-flow: column nowrap;
-}
-
-.mobile-nav-layout .list-layout {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 24px;
-    gap: 20px;
-}
-
-.mobile-nav-layout .list-layout .link-active::after {
-    display: none;
-}
-
-.mobile-menu-close {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.mobile-socials {
-    display: flex;
-    gap: 36px;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-}
-
-
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header-main {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-            ),
-            url("../images/people-office_@2x.jpg");
-    }
-}
-
-.mobile-nav-layout .list-layout .link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-}
-
-/* .mobile-nav-layout.address .menu-address-box .link */
-.mobile-address {
-    display: block;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2%;
-    padding-left: 24px;
-}
-
-@media (min-width: 320px) {
-    
-    .mobile-menu-layout {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-}
-
-/* Layout tabletowy */
-@media (min-width: 768px) {
-    .nav-all-container {
-        display: flex;
-    }
-
-    .mobile-menu-layout {
-        display: none;
-    }
-
-    .menu-address-box {
-        display: block;
-
-    }
-    .features-elements {
-        flex-basis: calc((100% - 72px) / 2);
-    }
-
-    .highlight-element {
-        text-align: left;
-    }
-
-    .people-box {
-        flex-basis: calc((50% - 24px));
-    }
-
-    .list-link-buttons {
-        flex-basis: calc((100% - 120px)/2);
-        width: calc((100% - 48px)/3);
-        display: block;
-    }
-
-    .buttons-link {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-        justify-content: center;
-    }
-
-    .logo-footer-box {
-        justify-content: left;
-    }
-
-    .logo {
-        margin-left: 0px;
-    }
-
-    .subscribe-form {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: left;
-    }
-
-    .subscribe-input {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-}
-
-/* Layout Desktop */
-@media (min-width: 1158px) {
-    .features-list {
-        flex-wrap: nowrap;
-    }
-
-    .menu-address-box {
-        display: flex;
-
-    }
-    .nav-all-container {
-        justify-content: center;
-    }
-
-    .icons-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #F4F4FD;
-        background-size: 264px;
-        padding: 24px 100px;
-        border-radius: 4px;
-        margin-bottom: 8px;
-    }
-
-
-    .features-elements {
-        flex-basis: calc((100% - 72px) / 4);
-    }
-
-    .people-box {
-        flex-wrap: nowrap;
-        
-    }
-
-    .highlight-element {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-    }
-                
-    
-    /* .buttons-link {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-    } */
-    .list-link-buttons {
-        width: calc((100% - 48px)/3);
-        display: flex;
-        flex-wrap: wrap;
-        
-}
-/* Our Portfolio */
-    /* .subscribe-container {
-        display: flex;
-        flex-direction: column;
-    } */
-
-    .subscribe-form {
-        display: flex;
-        gap: 24px;
-    }
-
-
-/* Footer */
-    .footer-logo-akapit .logo {
-        margin-right: 76px;
-    }
-
-}
