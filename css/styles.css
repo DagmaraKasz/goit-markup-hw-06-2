@@ -79,11 +79,11 @@ a {
     color: var(--ocean-color);
 }
 
-.mobile-address-phone {
+.link-mobile-nav-phone {
     color: var(--iris-color);
 }
 
-.mobile-address-mail {
+.link-mobile-nav-mail {
     color: var(--slate-color);
 }
 
@@ -195,6 +195,7 @@ a {
     text-decoration: none;
     display: inline-block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--navyblue-color);
 }
 
 .pointer {
@@ -488,13 +489,20 @@ dla której przypisane są klasy */
 /* druga sekcja Solutions */
 .features-section {
     padding-top: 96px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
 .features-elements {
+    display: flex;
+    flex-direction: column;
+}
+.features-elements {
     flex-basis: 100%;
     flex-basis: calc((100% - 72px));
 }
+
 
 .icons-container {
     display: none;
@@ -524,10 +532,7 @@ dla której przypisane są klasy */
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.features-elements {
-    display: flex;
-    flex-direction: column;
-}
+
 .logo-footer-box {
     margin-bottom: 16px;
 }
@@ -709,7 +714,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
 .page-footer {
     background-color: #2e2f42;
     padding-top: 96px;
-    padding-bottom: 100px;
+    padding-bottom: 96px;
     margin-top:96px;
 }
 
@@ -1196,7 +1201,7 @@ który jest utworzony za pomocą znacznika div*/
 }
 /* koniec Subscribe */
 
-/* Responsywność */
+/* ============================================== Responsywność ======================================================= */
 html, body {
     width: 100%;
 }
@@ -1279,11 +1284,11 @@ html, body {
 /* .mobile-nav-layout.address .menu-address-box .link */
 .mobile-address {
     display: block;
-    font-weight: 500;
+    padding-left: 24px;
+    /* font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.02em;
-    padding-left: 24px;
+    letter-spacing: 0.02em; */
 }
 
 @media (min-width: 320px) {
@@ -1295,7 +1300,7 @@ html, body {
     }
 }
 
-/* Layout tabletowy */
+/* =============================== Layout tabletowy ================================ */
 @media (min-width: 768px) {
     .nav-all-container {
         display: flex;
@@ -1309,12 +1314,39 @@ html, body {
         display: block;
 
     }
+
+    .menu-nav-box {
+        margin-right:  121px;
+        
+    }
+
+    .contact {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: var(--slate-color);
+        padding: 6px 0;
+    }
+    .menu-address-box{
+        padding: 16px 16px;
+    }
+
     .features-elements {
         flex-basis: calc((100% - 72px) / 2);
+        /* flex-basis: calc((100% - 120px)/2); */
+        
+        display: flex;
+        flex-wrap: wrap;
+        width: calc((100% - 10px)/2);
     }
 
     .highlight-element {
         text-align: left;
+    }
+
+    .subtitle {
+        padding-top: 12px;
     }
 
     .people-box {
@@ -1335,6 +1367,14 @@ html, body {
         justify-content: center;
     }
 
+
+    .footer-info {
+        margin-right: 24px;
+    }
+    .text-akapit-socials {
+        justify-content: left;
+    }
+
     .logo-footer-box {
         justify-content: left;
     }
@@ -1348,6 +1388,10 @@ html, body {
         flex-wrap: wrap;
         gap: 24px;
         justify-content: left;
+        margin-right: 207px;
+    }
+    .subscribe-title {
+        justify-content: left;
     }
 
     .subscribe-input {
@@ -1357,7 +1401,7 @@ html, body {
     }
 }
 
-/* Layout Desktop */
+/* =================================== Layout Desktop ============================= */
 @media (min-width: 1158px) {
     .features-list {
         flex-wrap: nowrap;
@@ -1381,7 +1425,20 @@ html, body {
         border-radius: 4px;
         margin-bottom: 8px;
     }
+    .modal {
+        width: 408px;
+    }
 
+    .features-elements .akapit {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+    .features-list {
+        display: flex;
+        gap: 24px;
+    }
 
     .features-elements {
         flex-basis: calc((100% - 72px) / 4);
@@ -1417,15 +1474,18 @@ html, body {
         flex-direction: column;
     } */
 
-    .subscribe-form {
+    /* .subscribe-form {
         display: flex;
         gap: 24px;
-    }
+    } */
 
 
 /* Footer */
     .footer-logo-akapit .logo {
         margin-right: 76px;
+    }
+    .footer-socials-container {
+        margin-right: 80px;
     }
 
 }
@@ -1443,10 +1503,3 @@ html, body {
 } */
 
 
-/* .contact {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate-color);
-    padding: 6px 0;
-} */
