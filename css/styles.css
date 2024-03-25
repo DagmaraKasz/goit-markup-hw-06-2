@@ -496,8 +496,6 @@ dla której przypisane są klasy */
     display: none;
 }
 
-
-
 .features-elements .akapit {
     font-weight: 500;
     font-size: 16px;
@@ -550,7 +548,7 @@ dla której przypisane są klasy */
     text-transform: capitalize;
     color: var(--navyblue-color); */
     margin-bottom: 72px;
-    padding-top: 96px;
+    /* padding-top: 96px; */
 }
 /* Dla listy w klasie ustawiony jest styl display: flex;
 służący do ułożenia elementów listy poziomo w rzędzie */
@@ -1317,6 +1315,14 @@ html, body {
         padding: 16px 16px;
     }
 
+    .modal {
+        width: 408px;
+    }
+
+    .link-active::after {
+        bottom: -32px;
+    }
+
     .features-list {
         display: flex;
         flex-wrap: wrap;
@@ -1417,9 +1423,7 @@ html, body {
         border-radius: 4px;
         margin-bottom: 8px;
     }
-    .modal {
-        width: 408px;
-    }
+    
 
     .features-elements .akapit {
             font-weight: 400;
