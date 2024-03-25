@@ -246,6 +246,7 @@ a {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--navyblue-color);
+    margin-bottom: 72px;
 }
 
 .people-names {
@@ -1194,7 +1195,7 @@ html, body {
 .mobile-menu-layout {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 
 .mobile-menu-layout button {
@@ -1214,12 +1215,16 @@ html, body {
     background-color: white;
     flex-flow: column nowrap;
 }
+/* .js-open-menu {
+    background-color: white;
+    border: none;
+} */
 
 .mobile-nav-layout .list-layout {
     display: flex;
     flex-flow: column nowrap;
-    padding: 24px;
-    margin-bottom: 168px;
+    padding: 20px;
+    margin-bottom: 110px;
 }
 
 .mobile-nav-layout .list-layout .link-active::after {
@@ -1273,7 +1278,8 @@ html, body {
     .mobile-menu-layout {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        /* padding-left: 16px; */
     }
 }
 
@@ -1424,6 +1430,10 @@ html, body {
         margin-bottom: 8px;
     }
     
+    .features-section {
+        padding-bottom: 96px;
+    
+    }
 
     .features-elements .akapit {
             font-weight: 400;
@@ -1442,7 +1452,7 @@ html, body {
 
     .people-box {
         flex-wrap: nowrap;
-        
+        gap: 24px;
     }
 
     .highlight-element {
