@@ -420,7 +420,7 @@ który ustawia szerokość elementu na 100% szerokości kontenera rodzicielskieg
 /* Dla kontenera przypisana jest dodatkowa domyślna klasa container,która służy do standaryzacji rozmiarów treści */
 .container {
     width: 100%;
-    max-width: 1158px;
+    max-width: 320px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -489,20 +489,8 @@ dla której przypisane są klasy */
 /* druga sekcja Solutions */
 .features-section {
     padding-top: 96px;
-    padding-right: 16px;
-    padding-left: 16px;
-}
 
-/* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 72px) / 4); służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można również użyć width calc((100% - 3 * 24px) / 4) lub flex-basis: calc((100% - 3 * 24px) / 4), lub flex-basis: calc((100% - 72px) / 4)) */
-.features-elements {
-    display: flex;
-    flex-direction: column;
 }
-.features-elements {
-    flex-basis: 100%;
-    flex-basis: calc((100% - 72px));
-}
-
 
 .icons-container {
     display: none;
@@ -516,7 +504,6 @@ dla której przypisane są klasy */
     line-height: 24px;
     letter-spacing: 0.02em;
     align-content: center;
-    margin-bottom: 72px;
 }
 
 /* wzorzec .visually-hidden do ukrycia nagłówka (zbiór styli wykorzystywanych do pełnego ukrycia elementu)*/
@@ -576,9 +563,8 @@ służący do ułożenia elementów listy poziomo w rzędzie */
 /* Dla pierwszego punktu listy przypisane są klasy o długości co najmniej 3 znaków,składające się z małych liter alfabetu łacińskiego i mogące zawierać myślnik lub podkreślnik */
 /* Dla pierwszego punktu listy w klasie ustawiony jest styl width: calc((100% - 48px) / 3);
 służący do określenia szerokości punktu listy (odejmujemy sumę odstępów między punktami od całkowitej szerokości ekranu i dzielimy to przez liczbę punktów listy) (można użyć width: calc((100% - 3 * 16px) / 3) lub flex-basis: calc((100% - 48px) / 3), lub flex-basis: calc((100% - 3 * 16px) / 3)) */
-.image-container {
-    width: calc((100% - 48px)/3);
-}
+
+
 
 /* czwarta sekcja our team */
 .people {
@@ -610,7 +596,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 72px;
 }
 /* Dla pierwszego punktu listy */
 .list-people {
@@ -619,7 +605,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     flex-direction: column;
     border-radius: 0px 0px 4px 4px;
     flex-basis: 100%;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     max-width: 264px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -715,7 +701,7 @@ służący do określenia szerokości punktu listy (odejmujemy sumę odstępów 
     background-color: #2e2f42;
     padding-top: 96px;
     padding-bottom: 96px;
-    margin-top:96px;
+    /* margin-top:96px; */
 }
 
 .p {
@@ -729,7 +715,9 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 72px 24px;
+    max-width: 530px;
+    /* justify-content: center; */
 }
 .footer-logo-akapit {
     justify-content: center;
@@ -765,7 +753,7 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     line-height: 24px;
     letter-spacing: 0.32px;
     color: var(--white-color);
-    margin-top: 72px;
+    /* margin-top: 72px; */
     margin-bottom: 16px;
     justify-content: center;
 }
@@ -1134,34 +1122,26 @@ który jest utworzony za pomocą znacznika div*/
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white-color);
-    margin-top: 72px;
     margin-bottom: 16px;
     justify-content: center;
 }
 
-.subscribe-form {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.subscribe-label {
+/* .subscribe-label {
     display: inline-flex;
     justify-content: center;
-}
+} */
 
-.subscribe-form .subscribe-label {
+/* .subscribe-form .subscribe-label {
     flex-basis: 100%;
     width: 100%;
-}
+} */
 
 .subscribe-form .subscribe-label .subscribe-input {
     width: 100%;
 }
 
 .subscribe-input {
-    display: flex;
     border-radius: 4px;
     border: 1px solid var(--white-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -1176,7 +1156,6 @@ który jest utworzony za pomocą znacznika div*/
     font-weight: 400;
     line-height: 2;
     letter-spacing: 0.04em;
-    padding-left: 16px;
     gap: 24px;
 }
 
@@ -1193,7 +1172,7 @@ który jest utworzony za pomocą znacznika div*/
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    padding: 16px;
+    padding: 8px 16px;
 }
 
 .subscribe-icon {
@@ -1302,6 +1281,11 @@ html, body {
 
 /* =============================== Layout tabletowy ================================ */
 @media (min-width: 768px) {
+
+.container {
+        max-width: 768px;
+    }
+
     .nav-all-container {
         display: flex;
     }
@@ -1316,8 +1300,8 @@ html, body {
     }
 
     .menu-nav-box {
-        margin-right:  121px;
-        
+        margin-right: 121px;
+
     }
 
     .contact {
@@ -1328,17 +1312,18 @@ html, body {
         color: var(--slate-color);
         padding: 6px 0;
     }
-    .menu-address-box{
+
+    .menu-address-box {
         padding: 16px 16px;
     }
 
-    .features-elements {
-        flex-basis: calc((100% - 72px) / 2);
-        /* flex-basis: calc((100% - 120px)/2); */
-        
+    .features-list {
         display: flex;
         flex-wrap: wrap;
-        width: calc((100% - 10px)/2);
+        gap: 72px 24px;
+    }
+    .features-elements {
+        width: calc((100% - 26px)/2);
     }
 
     .highlight-element {
@@ -1367,10 +1352,14 @@ html, body {
         justify-content: center;
     }
 
+    .footer-container {
+        margin-left: 108px;
+    }
 
     .footer-info {
         margin-right: 24px;
     }
+
     .text-akapit-socials {
         justify-content: left;
     }
@@ -1385,11 +1374,12 @@ html, body {
 
     .subscribe-form {
         display: flex;
-        flex-wrap: wrap;
         gap: 24px;
+        /* flex-wrap: wrap;
         justify-content: left;
-        margin-right: 207px;
+        margin-right: 207px; */
     }
+
     .subscribe-title {
         justify-content: left;
     }
@@ -1397,8 +1387,10 @@ html, body {
     .subscribe-input {
         display: flex;
         flex-wrap: wrap;
-        
+        padding: 8px 16px;
+
     }
+
 }
 
 /* =================================== Layout Desktop ============================= */
@@ -1455,7 +1447,14 @@ html, body {
         line-height: 24px;
     }
                 
-    
+    .container {
+        max-width: 1158px;
+    }
+
+    .image-container {
+        width: calc((100% - 48px)/3);
+    }
+
     /* .buttons-link {
         display: flex;
         flex-wrap: wrap;
