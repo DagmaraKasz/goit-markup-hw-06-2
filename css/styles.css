@@ -496,6 +496,11 @@ dla której przypisane są klasy */
 .icons-container {
     display: none;
 }
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
 
 .features-elements .akapit {
     font-weight: 500;
@@ -715,8 +720,6 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     align-items: baseline;
     flex-wrap: wrap;
     gap: 72px 24px;
-    max-width: 530px;
-    /* justify-content: center; */
 }
 .footer-logo-akapit {
     justify-content: center;
@@ -794,6 +797,12 @@ który ustawia wyrównanie elementów w kierunku poprzecznym wzdłuż głównej 
     justify-content: center;
 }
 
+.footer-socials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* strona Portfolio.html main */
 
 /* Wewnątrz znacznika main znajduje się sekcja utworzona za pomocą znacznika section */
@@ -855,7 +864,7 @@ który jest utworzony za pomocą znacznika div*/
     border: 1px solid #e7e9fc;
     border-top: none;
     justify-content: center;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
 }
 /* Dla nagłówka w klasie ustawiony jest styl margin-bottom: 8px,który służy do określenia odstępu między akapitem a nagłówkiem */
 .header-list {
@@ -1137,7 +1146,7 @@ który jest utworzony za pomocą znacznika div*/
 } */
 
 .subscribe-form .subscribe-label .subscribe-input {
-    width: 100%;
+    width: 288px;
 }
 
 .subscribe-input {
@@ -1172,6 +1181,8 @@ który jest utworzony za pomocą znacznika div*/
     border-radius: 4px;
     cursor: pointer;
     padding: 8px 16px;
+    margin: 0 auto;
+    margin-top: 16px;
 }
 
 .subscribe-icon {
@@ -1202,29 +1213,51 @@ html, body {
     background-color: transparent;
     border: none;
 }
-.js-menu-container {
-    display: none; 
-}
+/* .js-menu-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    flex-flow: column nowrap;
+    padding: 72px 24px 40px;
+} */
 
 .js-menu-container.is-open {
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
     background-color: white;
     flex-flow: column nowrap;
+    padding: 72px 24px 40px;
+    transform: translateX(100%);
 }
-/* .js-open-menu {
-    background-color: white;
+
+.js-close-menu {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
     border: none;
-} */
+    padding: 0;
+    line-height: 0;
+    width: 24px;
+    height: 24px;
+
+}
+
+.mobile-nav-layout {
+    margin-bottom: auto;
+}
 
 .mobile-nav-layout .list-layout {
     display: flex;
     flex-flow: column nowrap;
-    padding: 20px;
-    margin-bottom: 110px;
 }
 
 .mobile-nav-layout .list-layout .link-active::after {
@@ -1241,7 +1274,6 @@ html, body {
     display: flex;
     gap: 36px;
     justify-content: space-evenly;
-    margin-bottom: 40px;
 }
 
 
@@ -1266,11 +1298,7 @@ html, body {
 /* .mobile-nav-layout.address .menu-address-box .link */
 .mobile-address {
     display: block;
-    padding-left: 24px;
-    /* font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em; */
+
 }
 
 @media (min-width: 320px) {
@@ -1333,7 +1361,9 @@ html, body {
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
+        flex-direction: row;
     }
+
     .features-elements {
         width: calc((100% - 26px)/2);
     }
@@ -1348,10 +1378,11 @@ html, body {
 
     .people-box {
         flex-basis: calc((50% - 24px));
+        gap: 64px 24px;
     }
 
     .list-link-buttons {
-        flex-basis: calc((100% - 120px)/2);
+        /* flex-basis: calc((100% - 120px)/2); */
         width: calc((100% - 48px)/3);
         display: block;
     }
@@ -1362,10 +1393,6 @@ html, body {
         column-gap: 24px;
         row-gap: 48px;
         justify-content: center;
-    }
-
-    .footer-container {
-        margin-left: 108px;
     }
 
     .footer-info {
@@ -1382,6 +1409,16 @@ html, body {
 
     .logo {
         margin-left: 0px;
+    }
+
+    .footer-container {
+        margin-left: 108px;
+        /* max-width: 530px; */
+    }
+
+    .footer-socials-container {
+        display: flex;
+        flex-direction: column;
     }
 
     .subscribe-form {
@@ -1402,6 +1439,12 @@ html, body {
         padding: 8px 16px;
 
     }
+    .subscribe-button {
+        margin-top: 0px;
+    }
+    /* .subscribe-form .subscribe-label .subscribe-input {
+        width: 100%;
+    } */
 
 }
 
@@ -1432,14 +1475,13 @@ html, body {
     
     .features-section {
         padding-bottom: 96px;
-    
     }
 
     .features-elements .akapit {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-        }
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
 
     .features-list {
         display: flex;
@@ -1465,9 +1507,9 @@ html, body {
         max-width: 1158px;
     }
 
-    .image-container {
+    /* .image-container {
         width: calc((100% - 48px)/3);
-    }
+    } */
 
     /* .buttons-link {
         display: flex;
@@ -1477,10 +1519,8 @@ html, body {
     } */
     .list-link-buttons {
         width: calc((100% - 48px)/3);
-        display: flex;
-        flex-wrap: wrap;
-        
-}
+        flex-basis: calc((100% - 48px)/3)
+    }
 /* Our Portfolio */
     /* .subscribe-container {
         display: flex;
@@ -1500,7 +1540,10 @@ html, body {
     .footer-socials-container {
         margin-right: 80px;
     }
-
+    .page-footer {
+        margin-top: 96px;
+        
+    }
 }
 
 /* do dodania jako desktop:
