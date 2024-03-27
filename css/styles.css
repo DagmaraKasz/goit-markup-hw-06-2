@@ -1203,30 +1203,25 @@ html, body {
     border: none;
 }
 .js-menu-container {
-    display: none;
-    visibility: hidden;
+    /* display: none;
+    visibility: hidden; */
     padding: 72px 24px 40px;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    flex-flow: column nowrap;*/
-}
-
-.js-menu-container.is-open {
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 10;
     background-color: white;
     flex-flow: column nowrap;
-    padding: 72px 24px 40px;
-    /* transform: translateX(100%); */
+    transform: translateX(100%);
     visibility: visible;
+    transition: transform 250ms;
+}
+
+.js-menu-container.is-open {
+    transform: translateX(0);
 }
 
 .js-close-menu {
@@ -1239,7 +1234,8 @@ html, body {
     line-height: 0;
     width: 24px;
     height: 24px;
-
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav-layout {
