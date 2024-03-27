@@ -1225,7 +1225,7 @@ html, body {
     background-color: white;
     flex-flow: column nowrap;
     padding: 72px 24px 40px;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     visibility: visible;
 }
 
