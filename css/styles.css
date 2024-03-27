@@ -1134,17 +1134,6 @@ który jest utworzony za pomocą znacznika div*/
     justify-content: center;
 }
 
-
-/* .subscribe-label {
-    display: inline-flex;
-    justify-content: center;
-} */
-
-/* .subscribe-form .subscribe-label {
-    flex-basis: 100%;
-    width: 100%;
-} */
-
 .subscribe-form .subscribe-label .subscribe-input {
     width: 288px;
 }
@@ -1213,17 +1202,18 @@ html, body {
     background-color: transparent;
     border: none;
 }
-/* .js-menu-container {
-    display: flex;
-    position: fixed;
+.js-menu-container {
+    display: none;
+    visibility: hidden;
+    padding: 72px 24px 40px;
+    /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
-    flex-flow: column nowrap;
-    padding: 72px 24px 40px;
-} */
+    flex-flow: column nowrap;*/
+}
 
 .js-menu-container.is-open {
     display: flex;
@@ -1236,6 +1226,7 @@ html, body {
     flex-flow: column nowrap;
     padding: 72px 24px 40px;
     transform: translateX(100%);
+    visibility: visible;
 }
 
 .js-close-menu {
@@ -1306,6 +1297,7 @@ html, body {
     .mobile-menu-layout {
         display: flex;
         width: 100%;
+        justify-content: space-around;
     }
 }
 
@@ -1506,32 +1498,10 @@ html, body {
         padding-left: 15px;
         padding-right: 15px;
     }
-
-    /* .image-container {
-        width: calc((100% - 48px)/3);
-    } */
-
-    /* .buttons-link {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 48px;
-    } */
     .list-link-buttons {
         width: calc((100% - 48px)/3);
         flex-basis: calc((100% - 48px)/3)
     }
-/* Our Portfolio */
-    /* .subscribe-container {
-        display: flex;
-        flex-direction: column;
-    } */
-
-    /* .subscribe-form {
-        display: flex;
-        gap: 24px;
-    } */
-
 
 /* Footer */
     .footer-logo-akapit .logo {
@@ -1544,18 +1514,11 @@ html, body {
         margin-top: 96px;
         
     }
+    .footer-container {
+        margin-left: auto;
+    }
 }
 
-/* do dodania jako desktop:
-.highlight-element {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navyblue-color);
-    margin-bottom: 72px;
-    text-align: center;
-} */
+
 
 
