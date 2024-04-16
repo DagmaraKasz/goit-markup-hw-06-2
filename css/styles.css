@@ -541,7 +541,7 @@ dla której przypisane są klasy */
 /* trzecia sekcja images What are we doing */
 .scope-section {
     display: block;
-    padding-bottom: 120px 0;
+    padding-bottom: 60px;
     /* margin-bottom: 10px; */
 }
 /* nagłówek h2 What are we doing */
@@ -1295,9 +1295,12 @@ html, body {
         width: 100%;
         justify-content: space-around;
     }
+    .subscribe-input {
+        padding-left: 10px;
+    }
 }
 
-/* =============================== Layout tabletowy ================================ */
+/* ================== Layout tabletowy ================================ */
 @media screen and (min-width: 768px) {
 
 .container {
@@ -1431,10 +1434,13 @@ html, body {
     /* .subscribe-form .subscribe-label .subscribe-input {
         width: 100%;
     } */
+    .features-section {
+        padding-bottom: 60px;
+    }
 
 }
 
-/* =================================== Layout Desktop ============================= */
+/* ==================== Layout Desktop ============================= */
 @media screen and (min-width: 1158px) {
     .features-list {
         flex-wrap: nowrap;
